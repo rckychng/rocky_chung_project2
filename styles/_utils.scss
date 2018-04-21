@@ -1,0 +1,33 @@
+$pink: #e85889;
+$purple: #463f8c;
+$purplegrey: #4a4854;
+$black: #222222;
+$white: #ffffff;
+$lightgrey: #fafafa;
+$darkgrey: #777777;
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    width: 60%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
