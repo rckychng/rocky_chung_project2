@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Lisbon</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600|Raleway:400,500,600,700,800,900" rel="stylesheet">
+    <link type="image/png" href="images/favicon.png" rel="icon">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -71,8 +72,8 @@
             <div class="main-text">
                 <img class="main-text__icon" src="images/icon-microphone.png" alt="Microphone icon">
                 <p class="main-text__subtext">20 - 22 June, 2018, Newyork City</p>
-                <h1 class="main-text__header">World Digital Conference 2018<br>
-                    Lead to Your Career</h1>
+                <h1 class="main-text__header">World Digital Conference 2018</h1>
+                <h1 class="main-text__header">Lead to Your Career</h1>
                 <button class="main-text__button" type="button">Buy Tickets</button>
             </div>
         </section>
@@ -82,7 +83,8 @@
             <div class="timer wrapper">
                 <div class="timer__title">
                     <p class="timer__subtext">26-29 August 2017, BERLIN</p>
-                    <h3 class="timer__header">International<br>Conference in 2017</h3>
+                    <h3 class="timer__header">International</h3>
+                    <h3 class="timer__header">Conference in 2017</h3>
                 </div>
                 
                 <ul class="timer__list">
@@ -177,10 +179,12 @@
             <div class="join__body">
                 <h2 class="join__header">Join our Event</h2>
                 <p class="join__passage">Claritas est etiam processus dynamicus qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica quam nunc putamus parum claram anteposuerit litterarum formas humanitatis per seacula</p>
-                <div class="join__field">
+                <form class="join__field">
+                    <label for="join__email" class="visuallyhidden">Your Email</label>
                     <input class="join__email" type="email" placeholder="Your Email...">
-                    <input class="join__button" type="submit" value="Subscribe">
-                </div>
+                    <label for="join__button" class="visuallyhidden">Subscribe</label>
+                    <input class="join__button" id="join__button" type="submit" value="Subscribe">
+                </form>
             </div>
         </section>
         <!-- EVENT ENDS -->
@@ -441,43 +445,64 @@
                 <div class="news__title">
                     <h2 class="news__header">Latest News</h2>
                     <p class="news__passage">Starting your own IT business and picking right niche in less then 30 days</p>
-                </div>
-                
+                </div>  
                 <div class="news__body">
+                    <div class="news__left">             
+                        <div class="news__top-row">
+                            <div class="news__left--top">
+                                <img class="news__image" src="images/news-1.png" alt="People group discussion">
+                            </div>
+                            <div class="news__left--top-center">
+                                <div>
+                                    <h4 class="news__subheader">River stumble as lights</h4>
+                                    <h5 class="news__author">By Ashley Warner on 25 Apr 2017</h5>
+                                </div>
+                                <div>
+                                    <p class="news__text">Interfaces Holisticly predominate elitslate extensible testing procedures.</p>
+                                    <a class="news__button" href="#">Read More</a>
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="news__bottom-row"> 
+                            <div class="news__left--bottom">
+                                <div>
+                                    <h4 class="news__subheader">The Standard Chunk Of Fun</h4>
+                                    <h5 class="news__author">By Adam Rose on 17 Apr 2017</h5>
+                                </div>
+                                <div>
+                                    <p class="news__text">Interfaces Holisticly predominate elitslate extensible testing procedures.</p>
+                                    <a class="news__button" href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="news__left--bottom-center">
+                                <div class="news__facebook">
+                                    <p class="news__facebook--white"><i class="fas fa-link"></i></p>
+                                    <p class="news__facebook--white">http://www.facebook.com</p>
+                                </div>
+                                <div class="news__link">
+                                    <a class="news__button" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>    
+                    </div><!-- NEWS__LEFT ENDS -->
                     
-                    <div class="news__article news__article--row">
-                        <img class="news__image" src="images/news-1.png" alt="People group discussion">
-                        <div class="news__text">
-                            <h4>River stumble as lights</h4>
-                            <h5>By Ashley Warner on 25 Apr 2017</h5>
-                            <p>Interfaces Holisticly predominate elitslate extensible testing procedures.</p>
-                            <a href="#">Read More</a>
+                    <div class="news__right">
+                        <div class="news__right--top">
+                            <img class="news__image" src="images/news-2.png" alt="Student looking at board">
+                        </div>                    
+                        <div class="news__right--bottom">
+                            <div>
+                                <h4 class="news__subheader">How To Build Your Event</h4>
+                                <h5 class="news__author">By Seth Rollins on 22 Apr 2017</h5>
+                            </div>
+                            <div>
+                                <p class="news__text">Interfaces Holisticly predominate elitslate extensible testing procedures.</p>
+                                <a class="news__button" href="#">Read More</a>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="news__article news__article--row">
-                        <div class="news__text">
-                            <h4>The Standard Chunk Of Fun</h4>
-                            <h5>By Adam Rose on 17 Apr 2017</h5>
-                            <p>Interfaces Holisticly predominate elitslate extensible testing procedures.</p>
-                            <a href="#">Read More</a>
-                        </div>
-                        <div>
-                            <div></div>
-                            <div><a href="#">Read More</a></div>
-                        </div>
-                    </div>
-                    
-                    <div class="news__article news__article--column">
-                        <img class="news__image" src="images/news-2.png" alt="Student looking at board">
-                        <div class="news__text">
-                            <h4>How To Build Your Event</h4>
-                            <h5>By Seth Rollins on 22 Apr 2017</h5>
-                            <p>Interfaces Holisticly predominate elitslate extensible testing procedures.</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>                    
-                </div>
+                    </div><!-- NEWS__RIGHT ENDS -->
+                </div><!-- NEWS__BODY ENDS -->
+
             </div><!-- WRAPPER ENDS -->
         </section>
         <!-- NEWS ENDS -->
@@ -491,10 +516,12 @@
         <!-- NEWSLETTER STARTS -->
         <section class="newsletter">
             <h3 class="newsletter__header">Sign Up For Our Newsletter</h3>
-            <div class="newsletter__field">
-                <input class="newsletter__email" type="email" placeholder="Your Email Address...">
-                <input class="newsletter__button" type="submit" value="Subscribe">
-            </div>
+            <form class="newsletter__field">
+                <label for="newsletter__email" class="visuallyhidden">Your Email Address</label>
+                <input class="newsletter__email" id="newsletter__email" type="email" placeholder="Your Email Address...">
+                <label for="newsletter__button" class="visuallyhidden">Subscribe</label>
+                <input class="newsletter__button" id="newsletter__button" type="submit" value="Subscribe">
+            </form>
         </section>
         <!-- NEWSLETTER ENDS -->
 
@@ -506,7 +533,8 @@
                         <img class="contact__image" src="images/icon-map-marker.png" alt="Map Marker Icon">
                     </div>
                     <div class="contact__text">
-                        <p class="contact__info">184 Collins Street West Victoria,<br>United States, 8007</p>
+                        <p class="contact__info">184 Collins Street West Victoria,</p>
+                        <p class="contact__info">United States, 8007</p>
                     </div>
                 </div>
                 <div class="contact__method contact__method--center">
@@ -514,7 +542,8 @@
                         <img class="contact__image" src="images/icon-mobile.png" alt="Cellphone Icon">
                     </div>
                     <div class="contact__text">
-                        <p class="contact__info">(1800) 123 4567<br>(1800) 123 4568</p>
+                        <p class="contact__info">(1800) 123 4567</p>
+                        <p class="contact__info">(1800) 123 4568</p>
                     </div>
                 </div>
                 <div class="contact__method contact__method--right">
@@ -522,7 +551,8 @@
                         <img class="contact__image" src="images/icon-envelope.png" alt="Envelope Icon">
                     </div>
                     <div class="contact__text">
-                        <p class="contact__info">Info@Lisbon.com<br>Support@Lisbon.com</p>
+                        <p class="contact__info">Info@Lisbon.com</p>
+                        <p class="contact__info">Support@Lisbon.com</p>
                     </div>
                 </div>
             </div><!-- WRAPPER ENDS -->

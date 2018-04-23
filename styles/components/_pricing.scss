@@ -1,6 +1,6 @@
 .pricing {
     padding: 5% 0;
-    background: url(/images/pricing-image.png) no-repeat top center;
+    background: url('../images/pricing-image.png') no-repeat top center;
     background-size: 100%;
     &__title {
         text-align: center;
@@ -21,7 +21,6 @@
         text-transform: uppercase;
         color: $white;
     }
-
     &__passage {
         font-size: 1.7rem;
         font-style: italic;
@@ -59,7 +58,6 @@
         height: 100px;
         text-align: right;
     }
-
     &__tag-text {
         font-size: 1.3rem;
         font-weight: 500;

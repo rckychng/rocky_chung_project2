@@ -32,8 +32,12 @@
         border-radius: 0 0 5px 5px;
         box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
         margin-right: 25px;
+        transition: all 0.25s ease;
         &:last-child {
             margin-right: 0;
+        }
+        &:hover {
+            transform: scale(1.125);
         }
         &:hover .speakers__list {
             opacity: 1;
