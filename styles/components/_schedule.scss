@@ -1,0 +1,131 @@
+.schedule {
+    background-color: $lightgrey;
+    padding: 7% 0;
+    &__title {
+        text-align: center;
+        position: relative;
+        margin-bottom: 75px;
+        &::after {
+            content: '';
+            width: 65px;
+            border-bottom: 2px solid $pink;
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: -30px;
+            transform: translateX(-50%);
+        }
+    }
+    &__header {
+        text-transform: uppercase;
+    }
+    &__passage {
+        font-size: 1.7rem;
+        font-style: italic;
+        color: $darkgrey;
+    }
+    &__body {
+        display: flex;
+        align-items: center;
+    }
+    &__calendar {
+        margin-right: 60px;
+    }
+    &__list-item {
+        width: 280px;
+        height: 90px;
+        background-color: white;
+        border: 2px solid $midgrey;
+        border-bottom: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 30px;
+        &:last-child {
+            border-bottom: 2px solid $midgrey;
+        }
+        &:hover {
+            background-color: $pink;
+            border: 2px solid $pink;
+        }
+        &:hover .schedule__month {
+            color: $midgrey;
+        }
+        &:hover .schedule__day {
+            color: $white;
+        }
+    }
+    &__month {
+        font-size: 1.3rem;
+        color: $darkgrey;
+    }
+    &__day {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    &__timeline {
+        padding-left: 50px;
+        position: relative;
+        border-left: 2px dashed $midgrey;
+    }
+    &__guest {
+        display: flex;
+        margin-bottom: 50px;
+        align-items: flex-start;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__photo {
+        margin-right: 25px;
+        position: relative;
+        &::before {
+            content: '';
+            width: 30px;
+            border-bottom: 2px dashed $midgrey;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: -50px;
+        }
+        &--top::after {
+            content: '';
+            height: 50%;
+            width: 20px;
+            background-color: $lightgrey;
+            position: absolute;
+            top: 0;
+            left: -60px;
+        }
+        &--bottom::after {
+            content: '';
+            height: 60%;
+            width: 20px;
+            background-color: $lightgrey;
+            position: absolute;
+            bottom: -12px;
+            left: -60px;
+        }
+    }
+    &__image {
+        border-radius: 50%;
+        border: 8px solid $midgrey;
+        display: block;
+    }
+    &__name {
+        font-weight: 500;
+    }
+    &__time {
+        font-size: 1.3rem;
+        color: $darkgrey;
+    }
+    &__text-header {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin: 15px 0;
+    }
+    &__text-passage {
+        font-size: 1.3rem;
+        color: $darkgrey;
+    }
+}

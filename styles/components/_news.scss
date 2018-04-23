@@ -1,0 +1,33 @@
+.news {
+    // padding: 5% 0;
+    &__title {
+        text-align: center;
+        position: relative;
+        margin-bottom: 75px;
+        &::after {
+            content: '';
+            width: 65px;
+            border-bottom: 2px solid $pink;
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: -30px;
+            transform: translateX(-50%);
+        }
+    }
+    &__header {
+        text-transform: uppercase;
+    }
+    &__passage {
+        font-size: 1.7rem;
+        font-style: italic;
+        color: $darkgrey;
+    }
+    &__image {
+        width: 100%;
+        display: block;
+    }
+    &__body {
+        display: flex;
+    }
+}
