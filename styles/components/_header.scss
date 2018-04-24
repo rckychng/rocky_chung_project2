@@ -14,20 +14,23 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     position: relative;
-    &__list {
+    &__bar{
         display: flex;
         flex-flow: row wrap;
         align-items: center;
-        margin-top: 25px;
+    }
+    &__list {
+        display: flex;
+        flex-flow: row wrap;
     }
     &__link {
         font-size: 1.5rem;
         font-weight: 600;
         text-transform: uppercase;
         padding: 20px;
-        color: #fff;
+        color: $white;
         &:hover {
             color: $pink;
         }
@@ -51,6 +54,10 @@
 }
 
 .button__search {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $white;
     background-color: $pink;
     display: block;
     width: 45px;
@@ -71,6 +78,7 @@
     position: absolute;
     top: 55%;
     left: 50%;
+    width: 90%;
     transform: translate(-50%, -50%);
     &__subtext {
         font-size: 2.2rem;
@@ -142,6 +150,7 @@
             font-weight: 400;
             color: $darkgrey;
             line-height: 40px;
+            text-align: left;
         }
     }
     &__list-item--nobg {
@@ -153,8 +162,7 @@
         display: flex;
     }
     &__button {
-        font-family: 'Raleway',
-        sans-serif;
+        font-family: 'Raleway', sans-serif;
         font-size: 1.5rem;
         font-weight: 800;
         text-transform: uppercase;
@@ -186,7 +194,24 @@
         height: 70%;
     }
     .main-nav {
+        justify-content: center;
+        align-items: center;
         flex-flow: column wrap;
+        &__link {
+            font-size: 1.3rem;
+            padding: 15px;
+        }
+        &::before {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+    }
+    .main-text {
+        &__icon {
+            // display: none;
+        }
     }
     .main-timer {
         height: 30%;
@@ -207,5 +232,14 @@
             margin: 25px 0 50px 0;
         }
     }
+}
 
+@media (max-width: 1550px) {
+    .main-text {
+        margin-top: 25px;
+    }
+}
+
+
+@media (max-width: 1080px) {
 }

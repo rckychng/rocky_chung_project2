@@ -35,3 +35,15 @@ img {
     margin: 0 auto;
 }
 
+@media (max-width: 1280px) {
+    .wrapper {
+        width: 75%;
+    }
+}
+
+@media (max-width: 720px) {
+    .wrapper {
+        width: 85%;
+    }
+}
+
