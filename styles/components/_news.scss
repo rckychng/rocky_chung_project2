@@ -140,3 +140,17 @@
         justify-content: flex-end;
     }
 }
+
+@media (max-width: 1700px) {
+    .news{
+        &__body {
+            grid-template-columns: 1fr;
+        }
+        &__top-row {
+            grid-template-columns: 1fr;
+        }
+        &__bottom-row {
+            grid-template-columns: 1fr;
+        }
+    }
+}
