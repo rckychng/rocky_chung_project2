@@ -251,7 +251,9 @@
         justify-content: space-between;
         align-items: flex-end;
         &__link {
-            font-size: 3rem;
+            font-family: 'Raleway', sans-serif;
+            font-size: 3.6rem;
+            font-weight: 800;
             &:hover {
                 color: $purple;
             }
