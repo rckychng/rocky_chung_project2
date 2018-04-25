@@ -141,8 +141,10 @@
     }
 }
 
+// MEDIA QUERY
+
 @media (max-width: 1650px) {
-    .news{
+    .news {
         &__body {
             grid-template-columns: 1fr;
         }

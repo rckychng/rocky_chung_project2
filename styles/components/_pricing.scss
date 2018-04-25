@@ -134,6 +134,8 @@
     }
 }
 
+// MEDIA QUERY
+
 @media (max-width: 1350px) {
     .pricing {
         &__body {
@@ -150,5 +152,4 @@
             display: none;
         }
     }
-
 }
