@@ -129,3 +129,50 @@
         color: $darkgrey;
     }
 }
+
+@media (max-width: 1150px) {
+    .schedule {
+        &__body {
+            flex-flow: column nowrap;
+        }
+        &__calendar {
+            margin-right: 0;
+            margin-bottom: 50px;
+        }
+        &__list {
+            display: flex;
+        }
+        &__list-item {
+            width: 175px;
+            border: 2px solid $midgrey;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .schedule {
+        &__list {
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+        &__list-item {
+            width: 225px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .schedule {
+        &__photo {
+            &--bottom::after {
+                content: '';
+                height: 145px;
+                width: 20px;
+                background-color: $lightgrey;
+                position: absolute;
+                bottom: -105px;
+                left: -60px;
+            }
+        }
+    }
+}

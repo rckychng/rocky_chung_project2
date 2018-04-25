@@ -61,3 +61,22 @@
         color: $white;
     }
 }
+
+@media (max-width: 1080px) {
+    .quotes {
+        padding: 10% 10%;
+        &__body {
+            flex-flow: column nowrap;
+            padding: 0;
+        }
+        &__list {
+            display: flex;
+        }
+        &__list-item {
+            margin-right: 25px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

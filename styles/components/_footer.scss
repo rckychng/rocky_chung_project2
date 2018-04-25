@@ -144,3 +144,50 @@
         color: $pink;
     }
 }
+
+@media (max-width: 1080px) {
+    .contact {
+        &__body {
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+        &__method {
+            width: 50%;
+            border: 0;
+            justify-content: flex-start;
+            padding: 25px 0;
+            border-bottom: 2px solid $darkgrey;
+            &:last-child {
+                border-bottom: 0;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .newsletter {
+        &__field {
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+        &__email {
+            width: 75%;
+            margin-right: 0;
+            margin-bottom: 25px;
+        }
+    }
+    .contact {
+        &__method {
+            width: 70%;
+        }
+    }
+    .footer-nav {
+        &__list {
+            flex-flow: column nowrap;
+        }
+        &__list-item {
+            margin: 10px 0 10px 0;
+        }
+    }
+}

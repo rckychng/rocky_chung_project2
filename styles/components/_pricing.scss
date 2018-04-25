@@ -133,3 +133,22 @@
         }
     }
 }
+
+@media (max-width: 1350px) {
+    .pricing {
+        &__body {
+            flex-flow: column nowrap;
+        }
+        &__plan {
+            margin-right: 0;
+            margin-bottom: 35px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &__list {
+            display: none;
+        }
+    }
+
+}
