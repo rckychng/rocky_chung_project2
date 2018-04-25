@@ -3,7 +3,7 @@
     background-color: $purple;
     &__body {
         display: flex;
-        padding-right: 48%;
+        padding-right: 45%;
     }
     &__list {
         margin-right: 100px;
@@ -19,6 +19,7 @@
         border-radius: 50%;
         display: block;
         width: 100%;
+        cursor: pointer;
         &--selected {
             box-shadow: 0 0 0 7px $lightgrey;
         }
